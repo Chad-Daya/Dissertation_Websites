@@ -1,0 +1,12 @@
+ /*  N A V    B A R   */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+/* Css Style Sheet for navbar used for multiple pages  */

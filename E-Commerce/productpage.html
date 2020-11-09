@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-commerce Page</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="./CSS/productcss.css" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+    <link rel="stylesheet" href="./CSS/navcss.css">
+    <link rel="stylesheet" href="./CSS/topbannercss.css">
+  
+
+    <!--  Bootstrap 4 template set up  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    /*  P A G E */
+    
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+</style>
+
+<body>
+
+     <nav class="navbar navbar-inverse bg-inverse fixed-bottom bg-black">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+                <button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--  B A N N E R  -->
+
+    <!--  The banner which is present at the very top of the page  -->
+    <div class="topbanner">
+        <div class="container text-center">
+            <font color="white"><span style="font-family:Impact"><b><h1>Crep Check</h1></b></span></font>
+
+        </div>
+    </div>
+
+    <!-- Creates the top navigation bar with a number of buttons and search bar -->
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black">
+            <a href="#" class="navbar-brand">CC</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="Homepage.html" class="nav-item nav-link active">Home</a>
+                    <a href="allproducts.html" class="nav-item nav-link">All Products</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="Locate.html" class="nav-item nav-link">Store Locator</a>
+                    <a href="member.html" class="nav-item nav-link">Register</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu">
+                        <a href="productpage.html" class="dropdown-item">Airmax</a>
+                    </div>
+                </div>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <br></br>
+
+    <main class="container">
+
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+            <img data-image="black" src="img/black.jpg" alt="">
+            <img data-image="blue" src="img/blue.jpg" alt="">
+            <img data-image="red" class="active" src="img/red.jpg" alt="">
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Trainers</span>
+                <h1>Nike Air Max 90</h1>
+                <p>Iconic Air Max 90 silhouette with a mixed mesh/ suede upper with synthetic overlays, signature air bubble and contrasting gum outsole. In a white and red colourway.</p>
+            </div>
+
+            <!-- Product Configuration -->
+            <div class="product-configuration">
+
+                <!-- Product Color -->
+                <div class="product-color">
+                    <span>Color</span>
+
+                    <div class="color-choose">
+                        <div>
+                            <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                            <label for="red"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                            <label for="blue"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="black" type="radio" id="black" name="color" value="black">
+                            <label for="black"><span></span></label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                     <b><p class="card-text">Price: £269.00</p></b>
+                     <br></br>
+                    <a href="#" data-name="Airmax" data-price="269.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+    </main>
+
+   <!-- Modified from Codecamp Tutorial -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="./Scripts/productscript.js" charset="utf-8"></script>
+
+
+
+   <!--  C A R T   M O D A L   V I E W  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: £<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href='checkout.html'>
+                        <button type="button" class="btn btn-primary">Order now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Cart Script -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="./Scripts/cartscript.js"></script>
+
+</body>
+
+</html>
+
+<!-- Code Derived from https://designmodo.com/ -->

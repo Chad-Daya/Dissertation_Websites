@@ -1,0 +1,21 @@
+/*  T O P   B A N N E R  */
+
+
+.topbanner {
+	width: 100%;
+      height: 20vh;
+      background: url(Wall.jpg) no-repeat 25% 25%;
+      background-size: cover;
+}
+
+
+img {
+border-radius: 8px;
+}
+
+footer 
+background-color: #FA812F;
+padding: 25px;
+}
+
+/*  Banner CSS links to a number of pages and provides consistency in the banners  */

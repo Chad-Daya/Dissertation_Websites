@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Monochrome</title>
+    <!-- Bootstrap 4 Stylesheer-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap 4 Jsvascript-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    
+    <!--  C S S   S T Y L E S H E E T S  -->
+
+    <link rel="stylesheet" href="./CSS/navcss.css">
+
+
+</head>
+
+<body>
+    <font color="#0B6623"><h1 style="font-family:verdana;"><b>FINANCE TODAY ™</b></h1></font>
+    <!-- Creates the top navigation bar with a number of buttons and search bar -->
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">FX</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="Monochrome.html" class="nav-item nav-link active">Home</a>
+                    <a href="Crossfx.html" class="nav-item nav-link">Forex Cross Rate</a>
+                    <a href="Sub.html" class="nav-item nav-link">Subscribe</a>
+                </div>
+
+                <!-- Creates the drop down menu -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Live Stocks</a>
+                    <div class="dropdown-menu">
+                        <a href="Apple.html" class="dropdown-item">Apple</a>
+                        <a href="Samsung.html" class="dropdown-item">Samsung</a>
+                        <a href="Bitcoin.html" class="dropdown-item">Bitcoin</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tech-Analysis</a>
+                    <div class="dropdown-menu">
+                        <a href="AppleA.html" class="dropdown-item">Apple</a>
+                        <a href="SamsungA.html" class="dropdown-item">Samsung</a>
+                        <a href="BitcoinA.html" class="dropdown-item">Bitcoin</a>
+                    </div>
+                </div>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <br></br>
+
+    <font color="black"><h2><b>Samsung</b></h2></font>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+                        {
+                            "symbol": "OTC:SSNLF",
+                            "width": "100%",
+                            "height": 600,
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "locale": "en"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+            <div class="col">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "interval": "1m",
+                            "width": "100%",
+                            "isTransparent": false,
+                            "height": 600,
+                            "symbol": "KRX:005930",
+                            "showIntervalTabs": true,
+                            "locale": "en",
+                            "colorTheme": "light"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

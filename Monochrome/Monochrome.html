@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Monochrome</title>
+    <!-- Bootstrap 4 Stylesheer-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap 4 Jsvascript-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--  C S S   S T Y L E S H E E T S  -->
+
+    <link rel="stylesheet" href="./CSS/Homecss.css">
+
+</head>
+
+<body>
+    <font color="#0B6623"><h1 style="font-family:verdana;"><b>FINANCE TODAY ™</b></h1></font>
+    <!-- Creates the top navigation bar with a search option as well  -->
+
+    <!-- Creates the top navigation bar with a number of buttons and search bar -->
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">FX</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="Monochrome.html" class="nav-item nav-link active">Home</a>
+                    <a href="Crossfx.html" class="nav-item nav-link">Forex Cross Rate</a>
+                    <a href="Sub.html" class="nav-item nav-link">Subscribe</a>
+                </div>
+
+                <!-- Creates the drop down menu -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Live Stocks</a>
+                    <div class="dropdown-menu">
+                        <a href="Apple.html" class="dropdown-item">Apple</a>
+                        <a href="Samsung.html" class="dropdown-item">Samsung</a>
+                        <a href="Bitcoin.html" class="dropdown-item">Bitcoin</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tech-Analysis</a>
+                    <div class="dropdown-menu">
+                        <a href="AppleA.html" class="dropdown-item">Apple</a>
+                        <a href="SamsungA.html" class="dropdown-item">Samsung</a>
+                        <a href="BitcoinA.html" class="dropdown-item">Bitcoin</a>
+                    </div>
+                </div>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [{
+                    "proName": "OANDA:SPX500USD",
+                    "title": "S&P 500"
+                }, {
+                    "proName": "OANDA:NAS100USD",
+                    "title": "Nasdaq 100"
+                }, {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                }, {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "BTC/USD"
+                }, {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "ETH/USD"
+                }],
+                "colorTheme": "light",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "en"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+            {
+                "symbols": [{
+                    "proName": "OANDA:SPX500USD",
+                    "title": "S&P 500"
+                }, {
+                    "proName": "OANDA:NAS100USD",
+                    "title": "Nasdaq 100"
+                }, {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                }, {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "BTC/USD"
+                }, {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "ETH/USD"
+                }],
+                "colorTheme": "light",
+                "isTransparent": false,
+                "locale": "en"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <!-- Creates a container for each of the news blocks  -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-4"><font color="#4CBB17"><b><p></p></b></font>
+
+                <div class="gallery">
+                    <a target="_blank" href="https://www.telegraph.co.uk/money/">
+                        <img src="Images/3.jpg" alt="Cinque Terre" width="100%" height="400">
+                    </a>
+
+                    <!-- RSS feed -->
+                    <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=https%3A%2F%2Fwww.telegraph.co.uk%2Fbusiness%2Frss.xml&chan=y&num=5&desc=1&date=y&utf=y&html=y" charset="UTF-8" type="text/javascript"></script>
+
+                    <noscript>
+                        <a href="http://feed2js.org//feed2js.php?src=https%3A%2F%2Fwww.telegraph.co.uk%2Fbusiness%2Frss.xml&chan=y&num=5&desc=1&date=y&utf=y&html=y">View RSS feed</a>
+                    </noscript>
+
+                </div>
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "FX:EURUSD",
+                            "width": "100%",
+                            "height": "220",
+                            "locale": "en",
+                            "dateRange": "1d",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#E3F2FD",
+                            "isTransparent": false,
+                            "autosize": false,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+
+            <div class="col-lg-4"><b><font color="#4CBB17"><p></p></b></font>
+
+                <div class="gallery">
+                    <a target="_blank" href="https://www.bbc.co.uk/news/topics/c4qzyd68613t/uk-finance">
+                        <img src="Images/2.jpg" alt="Cinque Terre" width="100%" height="400">
+                    </a>
+                    <!-- RSS feed -->
+                    <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Fbusiness%2Frss.xml&chan=y&num=5&desc=1&date=y&utf=y" charset="UTF-8" type="text/javascript"></script>
+
+                    <noscript>
+                        <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Fbusiness%2Frss.xml&chan=y&num=5&desc=1&date=y&utf=y&html=y">View RSS feed</a>
+                    </noscript>
+
+                </div>
+
+            </div>
+            <div class="col-lg-4"><b><font color="#4CBB17"><p></p></b></font>
+
+                <div class="gallery">
+                    <a target="_blank" href="https://www.economist.com/">
+                        <img src="Images/1.jpg" alt="Cinque Terre" width="100%" height="400">
+                    </a>
+                    <!-- RSS feed -->
+                    <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=https%3A%2F%2Fwww.economist.com%2Fbritain%2Frss.xml&chan=y&num=5&desc=1&date=y&utf=y&html=y" charset="UTF-8" type="text/javascript"></script>
+
+                    <noscript>
+                        <a href="http://feed2js.org//feed2js.php?src=https%3A%2F%2Fwww.economist.com%2Fbritain%2Frss.xml&chan=y&num=5&desc=1&date=y&utf=y&html=y">View RSS feed</a>
+                    </noscript>
+
+                </div>
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "OANDA:GBPUSD",
+                            "width": "100%",
+                            "height": "220",
+                            "locale": "en",
+                            "dateRange": "1d",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#E3F2FD",
+                            "isTransparent": false,
+                            "autosize": false,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+            <!-- HTML RSS Codes by Quackit.com -->
+
+</body>
+
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-commerce Page</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="./CSS/allproductcss.css" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+    <link rel="stylesheet" href="./CSS/navcss.css">
+    <link rel="stylesheet" href="./CSS/topbannercss.css">
+  
+
+    <!--  Bootstrap 4 template set up  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    /*  P A G E */
+    
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+</style>
+
+<body>
+
+     <nav class="navbar navbar-inverse bg-inverse fixed-bottom bg-black">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+                <button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--  B A N N E R  -->
+
+    <!--  The banner which is present at the very top of the page  -->
+    <div class="topbanner">
+        <div class="container text-center">
+            <font color="white"><span style="font-family:Impact"><b><h1>Crep Check</h1></b></span></font>
+
+        </div>
+    </div>
+
+    <!-- Creates the top navigation bar with a number of buttons and search bar -->
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black">
+            <a href="#" class="navbar-brand">CC</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="Homepage.html" class="nav-item nav-link active">Home</a>
+                    <a href="allproducts.html" class="nav-item nav-link">All Products</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="Locate.html" class="nav-item nav-link">Store Locator</a>
+                    <a href="member.html" class="nav-item nav-link">Register</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu">
+                        <a href="productpage.html" class="dropdown-item">Airmax</a>
+                    </div>
+                </div>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <br></br>
+
+
+
+   <!--  T O P  P R O D U C T   C A R D S  -->
+
+
+<div class="group group-three">
+  <div class="group--container">
+    
+    <div class="group--title" data-aos="zoom-out-up" data-aos-offset="500">
+      <h2>Air Max Premium</h2>
+      <div class="group--subtitle">
+         If the Shoe Fits Hover It. 
+      <!--  If the Shoe Fits Card UI Experiment -->
+      </div>
+    </div>
+    
+    <div class="card--style2 card--one" data-aos="fade-up">
+      
+      <div class="shoe--info">
+        <span class="shoe--name">
+            NIKE AIR MAX PREMIUM
+        </span>
+        <b><p class="card-text">Price: £110.00</p></b>
+        <a href="#" data-name="AirmaxRed" data-price="110.0" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div> 
+      
+      <div class="shoe">
+        <img src="https://bit.ly/2lTBReR" alt="nike air max premium red" />
+      </div>
+      
+       <div class="shoe--colors">
+          
+          <ul class="colors">
+            <li data-color="#F5624D"></li>
+            <li data-color="#CC231E" class="active-color" ></li>
+            <li data-color="#34A65F"></li>
+          </ul>
+        
+        </div>
+  
+    </div>
+    
+     <div class="card--style2 card--two" data-aos="fade-up">
+      
+      <div class="shoe--info">
+        <span class="shoe--name">
+            NIKE AIR MAX ESSENTIAL
+        </span>
+        <b><p class="card-text">Price: £110.00</p></b>
+        <a href="#" data-name="AirmaxBlack" data-price="110.0" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div> 
+      
+      <div class="shoe">
+          <img src="https://bit.ly/2kRrQxP" alt="nike air max essential black" />
+      </div>
+       
+      
+       <div class="shoe--colors">
+          
+          <ul class="colors">
+            <li data-color="#F5624D"></li>
+            <li data-color="#CC231E" class="active-color" ></li>
+            <li data-color="#34A65F"></li>
+          </ul>
+        
+        </div>
+  
+    </div>
+    
+    <div class="card--style2 card--three" data-aos="fade-up">
+      
+      <div class="shoe--info">
+        <span class="shoe--name">
+            NIKE AIR MAX 90
+        </span>
+        <b><p class="card-text">Price: £110.00</p></b>
+        <a href="#" data-name="AirmaxBlue" data-price="110.0" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div> 
+      
+      <div class="shoe">
+        <img src="https://bit.ly/2kRsdIN" alt="nike air max 90" />
+      </div>
+      
+         <div class="shoe--colors">
+          
+          <ul class="colors">
+            <li data-color="#F5624D"></li>
+            <li data-color="#CC231E" class="active-color" ></li>
+            <li data-color="#34A65F"></li>
+          </ul>
+        
+        </div>
+  
+    </div>
+    
+    <div class="shop-all">
+      <a href='productpage.html'><button class="button">shop all collection</button></a>
+    </div>
+     <p>SCROLL DOWN FOR MORE PRODUCTS</p>
+  </div>
+</div>
+   <!--  Some Code taken from W3 School -->
+
+
+   <!--  P R O D U C T   C A R D S  -->
+
+
+   <!--  R O W 1  -->
+
+
+ <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/x1.jpg">
+                        <img class="pic-2" src="img2/x2.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">White Air Force 1</a></h3>
+                    <div class="price">
+                        £85.00
+                        <span>£95.00</span>
+                    </div>
+                    <a href="#" data-name="WhiteAirForce" data-price="85.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/x3.jpg">
+                        <img class="pic-2" src="img2/x4.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-discount-label">-12%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Air Max 95 Essential</a></h3>
+                    <div class="price">
+                        £130.00
+                        <span>£180.00</span>
+                    </div>
+        <a href="#" data-name="Airmax95" data-price="130.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/x5.jpg">
+                        <img class="pic-2" src="img2/x6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Nike Air VaporMax 360</a></h3>
+                    <div class="price">
+                        £180.00
+                        <span>£200.00</span>
+                    </div>
+                         <a href="#" data-name="VaporMax360" data-price="180.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/x7.jpg">
+                        <img class="pic-2" src="img2/x8.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">adidas Originals ZX 750</a></h3>
+                    <div class="price">
+                        £80.00
+                        <span>£85.00</span>
+                    </div>
+                    <a href="#" data-name="Adidas750" data-price="80.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--  R O W  2  -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/y1.jpg">
+                        <img class="pic-2" src="img2/y2.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">adidas Originals NMD_R1</a></h3>
+                    <div class="price">
+                        £170.00
+                        <span>£180.00</span>
+                    </div>
+                 <a href="#" data-name="adidasNMD" data-price="170.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/y3.jpg">
+                        <img class="pic-2" src="img2/y4.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-discount-label">-12%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Jordan Air 1 Low</a></h3>
+                    <div class="price">
+                        £80.00
+                        <span>£95.00</span>
+                    </div>
+                    <a href="#" data-name="JordanAir1Low" data-price="80.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/y5.jpg">
+                        <img class="pic-2" src="img2/y6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Vans Old Skool</a></h3>
+                    <div class="price">
+                        £65.00
+                        <span>£70.00</span>
+                    </div>
+                    <a href="#" data-name="VansOldSkool" data-price="65.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/z7.jpg">
+                        <img class="pic-2" src="img2/z8.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Converse Chuck Taylor </a></h3>
+                    <div class="price">
+                        £50.00
+                        <span>£55.00</span>
+                    </div>
+                    <a href="#" data-name="ConverseChuckTaylor" data-price="50.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>
+    
+
+<!--  R O W  3  -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/z1.jpg">
+                        <img class="pic-2" src="img2/z2.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Nike Benassi Slides</a></h3>
+                    <div class="price">
+                        £24.00
+                        <span>£30.00</span>
+                    </div>
+                 <a href="#" data-name="Benassi-Slides" data-price="24.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/z3.jpg">
+                        <img class="pic-2" src="img2/z4.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-discount-label">-12%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">North Face Slides</a></h3>
+                    <div class="price">
+                        £30.00
+                        <span>£35.00</span>
+                    </div>
+                    <a href="#" data-name="NorthFace-Slides" data-price="30.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/z5.jpg">
+                        <img class="pic-2" src="img2/z6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Jordan Air Break Slides</a></h3>
+                    <div class="price">
+                        £27.00
+                        <span>£29.70</span>
+                    </div>
+                    <a href="#" data-name="Jordan-Slides" data-price="27.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="img2/z7.jpg">
+                        <img class="pic-2" src="img2/z8.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Fila Drift Slides</a></h3>
+                    <div class="price">
+                        £20.00
+                        <span>£20.00</span>
+                    </div>
+                    <a href="#" data-name="Drifter-Slides" data-price="20.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br></br>
+
+
+
+
+   <!--  C A R T   M O D A L   V I E W  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: £<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href='checkout.html'>
+                        <button type="button" class="btn btn-primary">Order now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--  Some code modified from bootmd  -->
+
+<!-- Cart Script -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="./Scripts/cartscript.js"></script>
+
+</body>
+
+</html>
+
+<!-- Code Derived from https://designmodo.com/ -->

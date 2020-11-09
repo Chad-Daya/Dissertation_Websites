@@ -1,0 +1,435 @@
+/********************* Shopping Demo-4 **********************/
+.product-grid4,.product-grid4 .product-image4{position:relative}
+.product-grid4{font-family:Poppins,sans-serif;text-align:center;border-radius:5px;overflow:hidden;z-index:1;transition:all .3s ease 0s}
+.product-grid4:hover{box-shadow:0 0 10px rgba(0,0,0,.2)}
+.product-grid4 .product-image4 a{display:block}
+.product-grid4 .product-image4 img{width:100%;height:auto}
+.product-grid4 .pic-1{opacity:1;transition:all .5s ease-out 0s}
+.product-grid4:hover .pic-1{opacity:0}
+.product-grid4 .pic-2{position:absolute;top:0;left:0;opacity:0;transition:all .5s ease-out 0s}
+.product-grid4:hover .pic-2{opacity:1}
+.product-grid4 .social{width:180px;padding:0;margin:0 auto;list-style:none;position:absolute;right:0;left:0;top:50%;transform:translateY(-50%);transition:all .3s ease 0s}
+.product-grid4 .social li{display:inline-block;opacity:0;transition:all .7s}
+.product-grid4 .social li:nth-child(1){transition-delay:.15s}
+.product-grid4 .social li:nth-child(2){transition-delay:.3s}
+.product-grid4 .social li:nth-child(3){transition-delay:.45s}
+.product-grid4:hover .social li{opacity:1}
+.product-grid4 .social li a{color:#222;background:#fff;font-size:17px;line-height:36px;width:40px;height:36px;border-radius:2px;margin:0 5px;display:block;transition:all .3s ease 0s}
+.product-grid4 .social li a:hover{color:#fff;background:#16a085}
+.product-grid4 .social li a:after,.product-grid4 .social li a:before{content:attr(data-tip);color:#fff;background-color:#000;font-size:12px;line-height:20px;border-radius:3px;padding:0 5px;white-space:nowrap;opacity:0;transform:translateX(-50%);position:absolute;left:50%;top:-30px}
+.product-grid4 .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-22px;z-index:-1}
+.product-grid4 .social li a:hover:after,.product-grid4 .social li a:hover:before{opacity:1}
+.product-grid4 .product-discount-label,.product-grid4 .product-new-label{color:#fff;background-color:#16a085;font-size:13px;font-weight:800;text-transform:uppercase;line-height:45px;height:45px;width:45px;border-radius:50%;position:absolute;left:10px;top:15px;transition:all .3s}
+.product-grid4 .product-discount-label{left:auto;right:10px;background-color:#d7292a}
+.product-grid4:hover .product-new-label{opacity:0}
+.product-grid4 .product-content{padding:25px}
+.product-grid4 .title{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
+.product-grid4 .title a{color:#222}
+.product-grid4 .title a:hover{color:#16a085}
+.product-grid4 .price{color:#16a085;font-size:17px;font-weight:700;margin:0 2px 15px 0;display:block}
+.product-grid4 .price span{color:#909090;font-size:13px;font-weight:400;letter-spacing:0;text-decoration:line-through;text-align:left;vertical-align:middle;display:inline-block}
+.product-grid4 .add-to-cart{border:1px solid #e5e5e5;display:inline-block;padding:10px 20px;color:#888;font-weight:600;font-size:14px;border-radius:4px;transition:all .3s}
+.product-grid4:hover .add-to-cart{border:1px solid transparent;background:#16a085;color:#fff}
+.product-grid4 .add-to-cart:hover{background-color:#505050;box-shadow:0 0 10px rgba(0,0,0,.5)}
+@media only screen and (max-width:990px){.product-grid4{margin-bottom:30px}
+}
+
+/*CSS Modified from BootSnip Shopping Demo*/
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.color1, .colors > li:nth-child(1), .group-two {
+  background-color: #d33f4b;
+}
+
+.color2, .colors > li:nth-child(2) {
+  background-color: #545151;
+}
+
+.color3, .colors > li:nth-child(3) {
+  background-color: #5695c3;
+}
+
+.color4, .colors > li:nth-child(4) {
+  background-color: #0F8A5F;
+}
+
+.color5, .colors > li:nth-child(5) {
+  background-color: #235E6F;
+}
+
+.shoe--name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shoe--price {
+  color: #949494;
+}
+
+.group {
+  min-height: 760px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(https://bit.ly/2lpu3Uh);
+  background-blend-mode: multiply;
+}
+.group .group--container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.group .group--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.group .group--title h1, .group .group--title h2, .group .group--title h3, .group .group--title h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+.group .group--title h1:before, .group .group--title h2:before, .group .group--title h3:before, .group .group--title h4:before {
+  content: '';
+  display: block;
+  border-top: 4px solid #232323;
+  padding-top: 18px;
+  width: 43%;
+  margin: 0 auto;
+}
+.group .group--subtitle {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #777;
+  letter-spacing: 0.6px;
+}
+
+.card {
+  width: 315px;
+  height: 400px;
+  background: #fff;
+  margin: 0 15px;
+  padding: 60px 33px 12px 33px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.04);
+  border-radius: 2px;
+  position: relative;
+  display: block;
+}
+.card .shoe img {
+  max-width: 100%;
+  width: 250px;
+  margin-bottom: 120px;
+  position: relative;
+}
+.card .shoe--info {
+  position: absolute;
+  bottom: -70px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+.card .shoe--info .shoe--name {
+  margin-bottom: 8px;
+}
+.card .shoe--info .shoe--price {
+  font-weight: 400;
+  color: #757575;
+  font-size: 14px;
+}
+.card .shoe--colors {
+  padding: 23px 0 0 0;
+  border-top: 1px solid #f4f4f5;
+  bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+.colors {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.colors > li {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+.colors > li:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.buy-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  outline: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border: 2px solid #afafaf;
+  text-transform: uppercase;
+  padding: 8px 19px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #afafaf;
+}
+
+.card--style2 {
+  width: 330px;
+  height: 360px;
+  padding: 0;
+  position: relative;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+.card--style2 .shoe {
+  padding-bottom: 50px;
+  position: absolute;
+  bottom: 0;
+  will-change: transform;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.card--style2 .shoe:before {
+  content: "";
+  display: block;
+  background: #fff;
+  height: 310px;
+  width: 200px;
+  position: absolute;
+  bottom: 50px;
+  left: 90px;
+}
+.card--style2 .shoe img {
+  width: 100%;
+  position: relative;
+}
+.card--style2 .shoe--info {
+  position: relative;
+  left: 24px;
+  top: 60px;
+  z-index: 20;
+  will-change: transform;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.card--style2 .shoe--name:before {
+  content: "";
+  padding-top: 13px;
+  width: 190px;
+}
+.card--style2 .shoe--colors {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card--style2 .shoe--colors .colors {
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  left: 10px;
+  will-change: transform;
+  opacity: 0;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  -webkit-transition: all 0.33s ease-in;
+  transition: all 0.33s ease-in;
+  -webkit-transition-delay: 0.153s;
+          transition-delay: 0.153s;
+}
+.card--style2:hover .shoe--colors .colors {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.33s ease-out;
+  transition: all 0.33s ease-out;
+  -webkit-transition-delay: 0.253s;
+          transition-delay: 0.253s;
+}
+.card--style2:hover .shoe {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.card--style2:hover .shoe--info {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.card--style2.card--one .shoe--name:before {
+  border-top: 5px solid red;
+}
+.card--style2.card--two .shoe--name:before {
+  border-top: 5px solid black;
+}
+.card--style2.card--three .shoe--name:before {
+  border-top: 5px solid #5695c3;
+}
+
+.group-one {
+  background-color: #eaeaea;
+  background-image: none;
+}
+.group-one .group--title h1:before, .group-one .group--title h2:before, .group-one .group--title h3:before, .group-one .group--title h4:before {
+  border-color: #d33f4b;
+}
+
+.group-two .group--title {
+  color: rgba(250, 250, 250, 0.85);
+}
+.group-two .group--title h1:before, .group-two .group--title h2:before, .group-two .group--title h3:before, .group-two .group--title h4:before {
+  border-color: rgba(250, 250, 250, 0.9);
+}
+.group-two .group--subtitle {
+  color: rgba(250, 250, 250, 0.85);
+}
+.group-two .is--active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.group-two .shoe--info .shoe--name {
+  color: #fff;
+}
+.group-two .shoe--info .shoe--price {
+  color: #fff;
+}
+
+.group-three {
+  background-image: none;
+  background-color: #f4f4f4;
+}
+.group-three .shop-all {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 120px 0 0 0;
+}
+.group-three .shop-all .button {
+  border: 3px solid #444;
+  outline: 0;
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 9px 18px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.23s ease;
+  transition: all 0.23s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.group-three .shop-all .button:hover {
+  background-color: #232323;
+  color: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.23s ease;
+  transition: all 0.23s ease;
+}
+
+/*CSS Modified from BootSnip Ecommerce Example*/

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>E-commerce Page</title>
+
+    <!--  Bootstrap 4 template set up  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/navcss.css">
+    <link rel="stylesheet" href="./CSS/topbannercss.css">
+
+<style>
+    /*  P A G E */
+    
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+</style>
+
+</head>
+
+
+
+<body>
+
+    <!--  B A N N E R  -->
+
+    <!--  The banner which is present at the very top of the page  -->
+    <div class="topbanner">
+        <div class="container text-center">
+            <font color="white"><span style="font-family:Impact"><b><h1>Crep Check</h1></b></span></font>
+            <font color="white"><span style="font-family:Verdana"><p>Sneakers & More</p></span></font>
+        </div>
+    </div>
+
+   <!-- Creates the top navigation bar with a number of buttons and search bar -->
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black">
+            <a href="#" class="navbar-brand">CC</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="Homepage.html" class="nav-item nav-link active">Home</a>
+                    <a href="allproducts.html" class="nav-item nav-link">All Products</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="Locate.html" class="nav-item nav-link">Store Locator</a>
+                    <a href="member.html" class="nav-item nav-link">Register</a>
+                    <a href="productpage.html" class="nav-item nav-link">Air Max</a>
+                </div>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <br></br>
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <b><h1 class="jumbotron-heading">CONTACT US</h1></b>
+            <p class="lead text-muted mb-0">Please Fill In Form Below</p>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="EC.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creates the Contact Us Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contact us.
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="6" required></textarea>
+                            </div>
+                            <div class="mx-auto">
+                                <button type="submit" class="btn btn-primary text-right">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4">
+                <div class="card bg-light mb-3">
+                    <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Address</div>
+                    <div class="card-body">
+                        <p>5 Stockton Gardens</p>
+                        <p>Tottenham</p>
+                        <p>London</p>
+                        <p>Email : email@example.com</p>
+                        <p>Tel. +44 79 56 23 45</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

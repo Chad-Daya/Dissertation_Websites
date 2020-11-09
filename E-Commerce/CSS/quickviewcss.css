@@ -1,0 +1,329 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#wrapper
+{
+	margin: 0;
+	padding: 0;
+}
+
+#container
+{
+	width: 1024px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.product-container {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.product-list {
+	width: 100%;
+	float: left;
+}
+
+.product-list li{
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.product {
+	width: 235px;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.product-image {
+	width: 235px;
+	height: auto;
+	display: block;
+}
+
+.product img {
+	width: 235px;
+}
+
+.quick-view-controller {
+	float: left;
+	width: 100%;
+	position: absolute;
+	height: 50px;
+	background-color: #666;
+	opacity: 0.8;
+	bottom: 0px;
+}
+
+.quick-view-controller p {
+	float: left;
+	margin: 7px 0px 7px 22px;
+}
+
+.quick-view-controller p a {
+	padding: 10px 15px;
+	background-color: #FFF;
+	float: left;
+}
+
+.btn-view {
+	color: #222;
+}
+
+.mask {
+	background-color: #000;
+	height: 10000px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: none;
+	z-index: 9998;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+#quick-view-pop-up {
+	display: none;
+	background: #fff;
+	border: 1px solid #999;
+	z-index: 9998;
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	min-height: 400px;
+	min-width: 720px;
+}
+
+.quick-view-panel {
+	  z-index: 9999;
+}
+
+.quick-view-loading {
+	width: 100%;
+	float: left;
+	display: none;
+}
+
+.mini-carousel, .carousel {
+	float: left;
+}
+
+.mini-carousel {
+	margin: 22px 0 0 10px;
+	float: left;
+	width: 97px;
+	height: 354px;
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	position: relative;
+	top: 0px;
+}
+
+.mini-carousel ul {
+	float: left;
+  width: 97px;
+  display: block;
+  top: 0;
+  position: relative;
+}
+
+.mini-carousel ul li {
+	float: left;
+	margin-bottom: 10px; 
+	width: 97px;
+	height: 115px;
+	  top: 0;
+  position: relative;
+}
+
+.carousel {
+	float: left;
+  position: relative;
+  left: 3px;
+  top: 6px;
+  padding-left: 9px;
+  display: block;
+}
+
+.image-large {
+	float: left;
+	top: 10px;
+	width: 290px;
+	overflow: hidden;
+  display: block;
+  left: 0;
+}
+
+.image-large ul {
+	margin: 0 0 0 0;
+	list-style: none;
+	width: 1180px;
+	height: 370px;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel ul li{
+	float: left;
+	margin: 0;
+}
+
+.video-player {
+	   width: 290px;
+  height: 370px;
+  display: none;
+  position: absolute;
+  top: 10px;
+}
+.video-player iframe {
+  display: block;
+  float: left;
+  margin-left: 50px;
+}
+
+a.prev {
+	position: absolute;
+	top: 170px;
+	left: 8px;
+	height: 35px;
+	width: 36px;
+}
+
+a.next {
+	position: absolute;
+	top: 170px;
+	right: 0;
+	width: 36px;
+	height: 36px;
+}
+
+.quick-view-close {
+	opacity: 1;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 70px;
+	cursor: pointer;
+	z-index: 10;
+	display: block;
+	background-repeat: no-repeat;
+	height: 24px;
+	background-position-x: -78px;
+}
+
+.quick-view-video {
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	height: 26px;
+	width: 90px;
+}
+.detail {
+	  width: 315px;
+  float: left;
+    margin: 40px 31px 40px 31px;
+  
+}
+.product-details {
+	  margin-bottom: 20px;
+  float: left;
+}
+.product-name {
+  margin-bottom: 20px;
+}
+.product-price {
+  margin-bottom: 20px;
+}
+.orange {
+	  margin-bottom: 15px;
+  width: 100%;
+  background-color: #d35400;
+  color: #FFF;
+  padding: 9px 21%;
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.grey {
+	  margin-top: 20px;
+  float: left;
+  width: 220px;
+  padding: 3%;
+  background-color: #CCC;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.option-dropdowns {
+	margin-bottom: 20px;
+}
+.buttons {
+	margin-bottom: 20px;
+}
+a.view-more-detail {
+  float: left;
+  width: 81%;
+  background-color: #356890;
+  padding: 5% 5%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+}
+
+/* Some of the styling elements dervided from BootMd */
